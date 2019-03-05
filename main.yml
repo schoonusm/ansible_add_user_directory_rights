@@ -1,0 +1,7 @@
+- name: "Creating user and groups"
+  hosts: all
+    - name: Create groups
+      group: name=oinstall state=present
+-     name: Create user
+      user: name=oracle groups=oinstall password=oracle
+      
