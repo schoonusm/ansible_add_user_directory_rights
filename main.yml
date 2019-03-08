@@ -1,5 +1,5 @@
-  -hosts: all
-  -name: Add user
-    user= name=oracle state=present password=oracle
-    tags:
-        - user
+- name: "Creating multiple by checking folders"
+  hosts: all
+  
+- name: "Create User"
+  
