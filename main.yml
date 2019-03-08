@@ -3,4 +3,3 @@
   user: name=kees
         shell=/bin/bash
         password=kees
-        append=yes
