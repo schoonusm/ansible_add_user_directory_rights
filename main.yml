@@ -1,17 +1,9 @@
-- name: "Creating User and Group"
-  hosts: all
-  tasks:
-  - block:
 
-    - group:
-      name: oinstall
-      gid: 1000
-      state: present
+  hosts: all
     
     - user:
       name: oracle
       uid: 500
-      group: oinstall
       append: yes
       shell: /bin/bash
    
