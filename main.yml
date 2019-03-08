@@ -2,5 +2,5 @@
   hosts: all  
   user: name=oracle
         shell=/bin/bash
-        password=oracle        
+        password=oracle
         append=yes
