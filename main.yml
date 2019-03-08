@@ -1,5 +1,5 @@
   -hosts: all
   -name: Add user
-    user: name=oracle state=present password=oracle
+    user= name=oracle state=present password=oracle
     tags:
         - user
