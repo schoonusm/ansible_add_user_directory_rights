@@ -2,13 +2,13 @@
   hosts: all
   tasks:
   - block:
-    - name: "Create Oinstall group: 
+
     - group:
       name: oinstall
       gid: 1000
       state: present
     
-    - name: "Create Oracle User"
+
     - user:
       name: oracle
       uid: 500
