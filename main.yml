@@ -1,7 +1,8 @@
 - hosts: all
-
-  sudo: yes
-
   tasks:
+     - group: name=oinstall gid=1000
+     - user: name=oracle uid=500 group=oinstall
 
-  - user: name=oracle comment="My User"
+  
+  
+
