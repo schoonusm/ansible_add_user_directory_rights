@@ -1,6 +1,6 @@
 - name: Adding user oracle
   hosts: all
   user: 
-  name:oracle
-  password:oracle
-  append:yes
+  name=oracle
+  password=oracle
+  append=yes
