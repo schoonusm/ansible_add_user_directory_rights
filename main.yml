@@ -1,6 +1,6 @@
-- name: Adding user oracle
+- name: Adding user
   hosts: all
-  user: name=oracle
+  user: name=kees
         shell=/bin/bash
-        password=oracle
+        password=kees
         append=yes
