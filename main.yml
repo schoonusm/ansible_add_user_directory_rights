@@ -3,4 +3,5 @@
   
 - name: "Create User"
   hosts: all
+  -user:
   name: oracle
