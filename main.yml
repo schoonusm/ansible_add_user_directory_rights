@@ -1,4 +1,3 @@
 - name: Adding user
   hosts: all
-  user: name=kees
-        shell=/bin/bash
+  user: name:kees
