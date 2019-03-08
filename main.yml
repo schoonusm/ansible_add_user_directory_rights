@@ -1,12 +1,11 @@
   - hosts: all
-  - name: Add group "oinstall" to remote server
-       group:
+
+  - group:
        name: oinstall
        gid: 1000
        state: present
 
-   - name: Add user "oracle" to the remote server
-     user:
+   - user:
        name: oracle
        comment: "Privileged User"
        uid: 500
