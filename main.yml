@@ -1,6 +1,3 @@
-- name: "Creating multiple by checking folders"
-  hosts: all
-  
 - name: Adding user oracle
   hosts: all  
   user: name=oracle
