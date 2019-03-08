@@ -8,7 +8,6 @@
       gid: 1000
       state: present
     
-
     - user:
       name: oracle
       uid: 500
