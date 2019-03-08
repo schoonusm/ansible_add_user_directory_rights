@@ -1,5 +1,19 @@
-- name: "Creating user and groups"
-  hosts: all
-    - name: Create user
-      user: name=oracle password=oracle
-      
+  - hosts: all
+  tasks:
+   - name: Add group "oinstall" to remote server
+       group:
+       name: oinstall
+       gid: 1000
+       state: present
+
+   - name: Add user "oracle" to the remote server
+     user:
+       name: oracle
+       comment: "Privileged User"
+       uid: 500
+       group: oinstall
+       append: yes
+       shell: /bin/bash
+
+
+   
