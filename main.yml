@@ -1,5 +1,9 @@
 - name: Adding user oracle
-  hosts: all  
+  hosts: all
+  group:
+      name=oinstall
+      gid=1000
+      state=present
   user: name=oracle
         shell=/bin/bash
         password=oracle
