@@ -1,6 +1,7 @@
 - hosts: all
   tasks:
-     - group: name=oinstall gid=1000
+     - name: "Add group"
+       group: name=oinstall gid=1000
      - user: name=oracle uid=500 group=oinstall
 
   
