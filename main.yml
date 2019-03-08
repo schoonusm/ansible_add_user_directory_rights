@@ -1,5 +1,5 @@
 
  - hosts: all
  - user: 
-  name:oracle
-  password:oracle
+  name= oracle
+  password= oracle
