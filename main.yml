@@ -1,11 +1,7 @@
-
-  hosts: all
-    
-    - user:
-      name: oracle
-      uid: 500
-      append: yes
-      shell: /bin/bash
-   
-
-    
+# Add the user 'johnd' with a specific uid and a primary group of 'admin'
+- user:
+    host: all
+    name: johnd
+    comment: "John Doe"
+    uid: 1040
+    group: admin
