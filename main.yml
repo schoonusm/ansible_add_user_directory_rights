@@ -1,7 +1,4 @@
-# Add the user 'johnd' with a specific uid and a primary group of 'admin'
-- user:
-    host: all
-    name: johnd
-    comment: "John Doe"
-    uid: 1040
-    group: admin
+  - name: Add user
+    user: name=oracle state=present password=oracle
+    tags:
+        - user
