@@ -1,3 +1,7 @@
 - name: Adding user oracle
   hosts: all
-  user: name:oracle shell:/bin/bash password:oracle append:yes
+  user: 
+  name:oracle
+  shell:/bin/bash
+  password:oracle
+  append:yes
