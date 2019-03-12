@@ -1,8 +1,18 @@
-- hosts: all
+- hosts: java
   tasks:
      - name: "Add group"
        group: name=oinstall gid=1000
-     - user: name=oracle uid=500 group=oinstall
+     - name: "Add user"
+       user: 
+         name: oracle 
+         uid: 500 
+         groups: oinstall 
+         password: '$6$WnnY/du/deJX$vCf3aeZW3NBdzpwlDZZZpUNzxdjuZuG3N9vX.3Bew9VNrDri4bTL.GhDww67TRR9QjtOyupdwHsOsYonpxeu11'
+         state: present
+         shell: /bin/bash       # Defaults to /bin/bash
+         system: no             # Defaults to no
+         createhome: yes        # Defaults to yes
+         home: /home/oracle  # Defaults to /home/<username>
 
   
   
